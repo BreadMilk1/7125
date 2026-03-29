@@ -1,0 +1,10 @@
+COMP4146/7125 Prompt Engineering for Generative AI
+Semester 2, 2025/26
+
+Grading Breakdown:
+- Lab assignments: 20%
+- In-class quiz: 10%
+- Group project: 20%
+- Final project: 50%
+
+The final project includes a group presentation and a personal report.
