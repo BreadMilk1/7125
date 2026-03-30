@@ -1,6 +1,6 @@
 import ollama
 
-model_name="qwen3.5:4b"
+model_name="llama3.1:8b"
 
 def generate_raw_response(prompt,model=model_name,temperature=0.1,num_predict=200,stop=None):
     response = ollama.generate(
