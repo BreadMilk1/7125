@@ -9,8 +9,7 @@ def generate_raw_response(prompt,model=model_name,temperature=0.1,num_predict=20
         raw=True,
         options={
             "temperature": temperature,
-            "num_predict": num_predict,
-            "stop": stop if stop else []
+            "num_predict": max_tokens
         }
     )
     return {
