@@ -2,14 +2,15 @@ import ollama
 
 model_name="qwen3.5:4b"
 
-def generate_raw_response(prompt,model=model_name,temperature=0.1,num_predict=200):
+def generate_raw_response(prompt,model=model_name,temperature=0.1,num_predict=200,stop=None):
     response = ollama.generate(
         model=model,
         prompt=prompt,
         raw=True,
         options={
             "temperature": temperature,
-            "num_predict": num_predict
+            "num_predict": num_predict,
+            "stop": stop if stop else []
         }
     )
     return {
