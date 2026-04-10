@@ -1,5 +1,6 @@
 from pathlib import Path
-import pdfplumber
+
+
 def load_txt_document(txt_path):
     txt_path=Path(txt_path)
     text = txt_path.read_text(encoding="utf-8").strip()
@@ -12,6 +13,8 @@ def load_txt_document(txt_path):
     }]
 
 def load_pdf_document(pdf_path):
+    import pdfplumber
+
     pdf_path=Path(pdf_path)
     pages=[]
     with pdfplumber.open(pdf_path) as pdf:

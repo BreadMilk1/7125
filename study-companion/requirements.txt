@@ -1,0 +1,5 @@
+ollama
+pandas
+pdfplumber
+rank-bm25
+tqdm
